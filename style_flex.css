@@ -105,4 +105,26 @@
   }
 
   /* blog section */
+  .blog-section h1 {
+    text-align: center;
+    font-size: 55px;
+    }
+    .blog-section .blog-content {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin: 10px 30px;
+      gap: 20px;
+      }
+      .blog-section .blog-content img {
+        width: 600px;
+        height: 400px;
+      }
+      .blog-section .blog-content .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
   
