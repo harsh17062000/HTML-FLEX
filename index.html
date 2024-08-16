@@ -1,35 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/style.css" />
     <title>Document</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="hero" id="hero">
-        <div class="navbar">
-            <h1>Anime</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">home</a></li>
-                    <li><a href="#about">about</a></li>
-                    <li><a href="#blog">blog</a></li>
-                    <li><a href="#contact">contact</a></li>
-                </ul>
-            </nav>
-            <div class="icon">
-                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://twitter.com/?lang=en"><i class="fa-brands fa-twitter"></i></a>
-                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-            </div>
+      <div class="navbar">
+        <h1>Rental <span> Cars </span></h1>
+        <nav>
+          <ul>
+            <li><a href="#about">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="navbar2">
+        <div>
+          <a href="#"
+            >(+91)8821474809
+            <i class="fa-sharp-duotone fa-solid fa-reply-all"></i
+          ></a>
         </div>
-    </header>
-</body>
 
+        <div class="icon">
+          <a href="https://mail.google.com/mail/" target="_blank"
+            ><i class="fa-duotone fa-solid fa-envelopes-bulk"> </i
+            >rental@gmail.com
+          </a>
+        </div>
+      </div>
+      <div class="navbar3">
+        <form >
+              <div class="car-type">
+                <input
+                  type="text"
+                  placeholder="select your car type"
+                  list="vehicles"/>
+                
+                <datalist id="vehicles">
+                  <option value="BMW-supercar"></option>
+                  <option value="mercedes"></option>
+                  <option value=" jagwar "></option>
+                  <option value="mustank"></option>
+                  <option value="farari"></option>
+                </datalist>
+              </div>
+             </form>
+      </div>
+      <div class="content">
+        <div>
+          <h3 style="font-size: 40px">Rent a car</h3>
+          <h1 style="font-size: 50px">Best rented cars in your location</h1>
+          <h2 style="font-size: 50px">
+            Get 15% off on your first <br />
+            reservation...
+          </h2>
+          <h4>
+            <button class="btn"><a href="#reservation"> Book now </a></button>
+          </h4>
+        </div>
+      </div>
+    </header>
+    <!-- reservation section -->
+    <h1 class="heading" id="reservation">Reservation</h1>
+
+    <section class="reservations">
+      <div class="container">
+        <div class="box">
+          <div class="form">
+            <h1>continue car reservation</h1>
+            <br />
+            <form action="">
+              <div>
+                <input
+                  type="text"
+                  placeholder="select your car type"
+                  list="vehicles"
+                />
+                <datalist id="vehicles">
+                  <option value="BMW-supercar"></option>
+                  <option value="mercedes"></option>
+                  <option value=" jagwar "></option>
+                  <option value="mustank"></option>
+                  <option value="farari"></option>
+                </datalist>
+              </div>
+              <br />
+
+              <div>
+                <i class="fa-solid fa-location-dot"></i>
+                <label for="msg"></label>
+                <textarea
+                  id="msg"
+                  rows="2"
+                  cols="30"
+                  placeholder="enter your pickup location"
+                ></textarea
+                ><br /><br />
+                <label for="msg"></label>
+                <i class="fa-solid fa-location-dot"></i>
+                <textarea
+                  id="msg"
+                  rows="2"
+                  cols="30"
+                  placeholder="enter your drop location"
+                ></textarea
+                ><br />
+                <br />
+                <h1 style="font-size: 30px">
+                  need a different drop off location
+                </h1>
+                <br />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- about section -->
+    <section class="about-section" id="about">
+      <h1>About us</h1>
+      <div class="about-content">
+        <img src="/car-hero2.avif" alt="" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
+          assumenda suscipit impedit facilis fugiat ab animi, neque nemo porro,
+          harum alias ratione totam minima iusto illo hic, laudantium labore. In
+          consequuntur rerum maiores aperiam omnis. Quos ex temporibus quaerat
+          rem fuga, voluptates obcaecati nisi deleniti eum qui, explicabo libero
+          incidunt! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Optio, harum. Lorem ipsum, dolor sit amet consectetur adipisicing
+          elit. Quam tenetur libero ipsam ab, incidunt maiores laudantium,
+          corporis tempore beatae dicta, pariatur ipsa distinctio autem numquam
+          commodi. Nostrum fuga ipsam similique accusantium molestiae quidem
+          excepturi explicabo, ea perferendis quo aperiam pariatur quis
+          consequatur incidunt velit cum blanditiis ducimus quaerat, reiciendis
+          laboriosam.
+        </p>
+        <button class="btn2"><a href=""> Read more </a></button>
+      </div>
+    </section>
+  </body>
 </html>
