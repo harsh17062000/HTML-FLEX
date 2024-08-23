@@ -11,6 +11,8 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" 
+    integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
     <title>Document</title>
   </head>
 
@@ -22,7 +24,7 @@
           <ul>
             <li><a href="#about">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#blog">Blog</a></li>
+            <li><a href="#Blog">Blog</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
@@ -42,24 +44,7 @@
           </a>
         </div>
       </div>
-      <div class="navbar3">
-        <form >
-              <div class="car-type">
-                <input
-                  type="text"
-                  placeholder="select your car type"
-                  list="vehicles"/>
-                
-                <datalist id="vehicles">
-                  <option value="BMW-supercar"></option>
-                  <option value="mercedes"></option>
-                  <option value=" jagwar "></option>
-                  <option value="mustank"></option>
-                  <option value="farari"></option>
-                </datalist>
-              </div>
-             </form>
-      </div>
+
       <div class="content">
         <div>
           <h3 style="font-size: 40px">Rent a car</h3>
@@ -74,85 +59,197 @@
         </div>
       </div>
     </header>
-    <!-- reservation section -->
-    <h1 class="heading" id="reservation">Reservation</h1>
+    <!-- reservation section ----------------------------------------------------------------------------->
+    <h1 style="font-size: 50px; text-align: center" id="reservation">
+      Reservation
+    </h1>
+    <div class="background">
+      <div class="reservation-form">
+        <h1>Continue Car Reservation</h1>
+        <br /><br /><br />
+        <form action="">
+          <label for="cars">Select Car type </label>
+          <input type="text" name="name" id="cars" list="vehicles" />
+          <datalist id="vehicles">
+            <option value="jagwar"></option>
+            <option value="Farari"></option>
+            <option value="Audi"></option>
+            <option value="BMW"></option>
+            <option value="Rang Rover"></option>
+            <option value="Jeep"></option>
+          </datalist>
 
-    <section class="reservations">
-      <div class="container">
-        <div class="box">
-          <div class="form">
-            <h1>continue car reservation</h1>
-            <br />
-            <form action="">
-              <div>
-                <input
-                  type="text"
-                  placeholder="select your car type"
-                  list="vehicles"
-                />
-                <datalist id="vehicles">
-                  <option value="BMW-supercar"></option>
-                  <option value="mercedes"></option>
-                  <option value=" jagwar "></option>
-                  <option value="mustank"></option>
-                  <option value="farari"></option>
-                </datalist>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required />
+
+          <label for="destination">Destination</label>
+          <input type="text" name="destination" id="destination" required />
+
+          <label for="departure-date">Departure-date</label>
+          <input type="date" name="departure-date" required />
+
+          <label for="return-date">Return date</label>
+          <input
+            type="date"
+            name="return-date"
+            id="return-date"
+            required
+          /><br />
+
+          <button type="submit">Book now</button>
+        </form>
+      </div>
+    </div>
+    <br><br><hr>
+
+    <!-- about section ------------------------------------------------------------->
+    <section class="about-section" id="about">
+      <div class="about-container">
+        <div class="heading1">
+          <h1>About Us</h1>
+        </div>
+
+        <div class="about-content">
+          <h2>Come and see what we offer </h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident
+            earum suscipit necessitatibus nihil adipisci. Enim.
+            <a href="#">read more</a>
+          </p>
+        </div>
+      </div>
+    </section>
+    <hr>
+    <!-- blog section --------------------------------------------------------------------->
+    <section class="blog" id="Blog">
+      <h1>Blog</h1>
+      <div class="blog-container">
+        <div class="card">
+          <img src="/audi.jpg" alt="">
+          <h1>Audi</h1>
+          <h2>$1000/day</h2>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <button>book now</button>
+        </div>
+
+        <div class="card">
+          <img src="/bmw.jpeg" alt="">
+          <h1>BMW</h1>
+          <h2>$1000/day</h2>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <button>book now</button>
+        </div>
+
+        <div class="card">
+          <img src="/farari.jpg" alt="">
+          <h1>Farari</h1>
+          <h2>$1000/day</h2>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <button>book now</button>
+        </div>
+
+        <div class="card">
+          <img src="/black_light.jpeg" alt="">
+          <h1>Mercedes</h1>
+          <h2>$100/day</h2>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <button>book now</button>
+        </div>
+
+        <div class="card">
+          <img src="/pexels-dk004-14885685.jpg" alt="">
+          <h1>thar</h1>
+          <h2>$100/day</h2>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <button>book now</button>
+        </div>
+
+        <div class="card">
+          <img src="/pexels-eddie-ortiz-1351710948-26605602.jpg" alt="">
+          <h1>Bently</h1>
+          <h2>$100/day</h2>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <button>book now</button>
+        </div>
+
+        <div class="card">
+          <img src="/pexels-louis-gys-218031041-11921988.jpg" alt="">
+          <h1>BMW</h1>
+          <h2>$100/day</h2>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <button>book now</button>
+        </div>
+
+        <div class="card">
+          <img src="/alto.webp" alt="">
+          <h1>Alto</h1>
+          <h2>$100/day</h2>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <button>book now</button>
+        </div>
+      </section>
+
+      <!-- contact us section--------------------------------------------------------------------------------->
+
+      <section class="contact" id="Contact">
+        <!-- <h1>Contact Us</h1> -->
+        <div class="content-contact">
+          <h2>Contact us</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet similique exercitationem
+             quas commodi cumque, praesentium sapiente incidunt nostrum expedita iste!</p>
+        </div>
+        <div class="contact-container">
+          <div class="contact-info">
+            <div class="box-contact">
+              <div class="icon"> <i class="fa fa-map-marker" aria-hidden="true"></i></div>
+
+                <div class="txt">
+                  <h3>Adress</h3>
+                  <p>185, Zone-I,<br> M.P. Nagar, Bhopal, Madhya Pradesh <br> 462011</p>
+                </div>
+              
+            </div>
+
+            <div class="box-contact">
+              <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                <div class="txt">
+                  <h3>Phone</h3>
+                  <p>0755-4455-4455</p>
+                </div>
               </div>
-              <br />
 
-              <div>
-                <i class="fa-solid fa-location-dot"></i>
-                <label for="msg"></label>
-                <textarea
-                  id="msg"
-                  rows="2"
-                  cols="30"
-                  placeholder="enter your pickup location"
-                ></textarea
-                ><br /><br />
-                <label for="msg"></label>
-                <i class="fa-solid fa-location-dot"></i>
-                <textarea
-                  id="msg"
-                  rows="2"
-                  cols="30"
-                  placeholder="enter your drop location"
-                ></textarea
-                ><br />
-                <br />
-                <h1 style="font-size: 30px">
-                  need a different drop off location
-                </h1>
-                <br />
+            <div class="box-contact">
+              <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+                <div class="txt">
+                  <h3>E-mail</h3>
+                  <p>Rentalcar@mail.com</p>
+                </div>
+              </div>
+          </div>
+
+          <div class="contact-form">
+            <form action="">
+              <h2>Send Message</h2>
+              <div class="input-box">
+                <input type="text" name="" required="required">
+                <span>Full name</span>
+
+                <div class="input-box">
+                <input type="text" name="" required="required">
+                <span>Email</span>
+
+                <div class="input-box">
+                <textarea name="" id="" required></textarea>
+                <span>Type your Message...</span>
+
+                <div class="input-box">
+                  <input type="submit" value="send">
+                </div>
+
               </div>
             </form>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- about section -->
-    <section class="about-section" id="about">
-      <h1>About us</h1>
-      <div class="about-content">
-        <img src="/car-hero2.avif" alt="" />
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
-          assumenda suscipit impedit facilis fugiat ab animi, neque nemo porro,
-          harum alias ratione totam minima iusto illo hic, laudantium labore. In
-          consequuntur rerum maiores aperiam omnis. Quos ex temporibus quaerat
-          rem fuga, voluptates obcaecati nisi deleniti eum qui, explicabo libero
-          incidunt! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          Optio, harum. Lorem ipsum, dolor sit amet consectetur adipisicing
-          elit. Quam tenetur libero ipsam ab, incidunt maiores laudantium,
-          corporis tempore beatae dicta, pariatur ipsa distinctio autem numquam
-          commodi. Nostrum fuga ipsam similique accusantium molestiae quidem
-          excepturi explicabo, ea perferendis quo aperiam pariatur quis
-          consequatur incidunt velit cum blanditiis ducimus quaerat, reiciendis
-          laboriosam.
-        </p>
-        <button class="btn2"><a href=""> Read more </a></button>
-      </div>
-    </section>
+      </section>
   </body>
 </html>
